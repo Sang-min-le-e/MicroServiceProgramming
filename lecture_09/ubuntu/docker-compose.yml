@@ -1,0 +1,12 @@
+version: '3.7'
+service:
+  manager:
+    image: ubuntu:latest
+    tty: true
+  worker1:
+    image: nginx
+    ports: - "8001:80"
+  worker2:
+    image nginx
+    ports:
+      - "8002:80"
